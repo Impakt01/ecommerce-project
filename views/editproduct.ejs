@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="profile">
+    <meta name="author" content="Toluaoyewale">
+    <title>Order</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styling/dashboard.css">
+    <!-- <link rel="stylesheet" href="styling/dashboard.rtl.css"> -->
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow myBg">
+        <!-- <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">Company name</a> -->
+        <h1 class="navbar-brand col-md-3 col-lg-2 px-3 "> Welcome johnson</h1>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3 sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+
+                            <h6
+                                class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
+                                <span>DASHBOARD</span>
+                                <a class="link-secondary" href="#" aria-label="Add a new report">
+                                    <span data-feather="plus-circle" class="align-text-bottom"></span>
+                                </a>
+                            </h6>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/seller_act">
+                                <span data-feather="shopping-cart" class="align-text-bottom"></span>
+                                Go to Products
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn" onclick="displayForm('updateProductName')">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                Update Product Name
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn" onclick="displayForm('updateProductPrice')">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                Update Price
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn" onclick="displayForm('updateProductCategory')">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                Update category
+                            </button>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="btn" onclick="displayForm('updateProductDescription')">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                Update Description
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn" onclick="displayForm('updateProductInStock')">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                No inStock
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn" onclick="displayForm('updateProductColor')">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                Update Color
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn" onclick="displayForm('updateProductSize')">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                Update Size
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn" onclick="displayForm('updateProductSize')">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                Update image
+                            </button>
+                        </li>
+                    </ul>
+
+                    <h6
+                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
+                        <span>SETTINGS</span>
+                        <a class="link-secondary" href="#" aria-label="Add a new report">
+                            <span data-feather="plus-circle" class="align-text-bottom"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text" class="align-text-bottom"></span>
+                                Change Password
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Product Update</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group me-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Logout</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Logout All Sessions</button>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-outline-danger">
+                            Close Account
+                        </button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <p id="statusMsg"></p>
+                    <form class="updateDisplay" id="updateProductName">
+                        <div class="mb-3">
+                            <label for="productName" class="form-label"> Product Name </label>
+                            <input type="text" class="form-control" id="productName">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="updateProductBtn"
+                            onclick="updateOperation('productName')">Update</button>
+                    </form>
+
+                    <form class="updateDisplay" id="updateProductPrice">
+                        <div class="mb-3">
+                            <label for="price" class="form-label"> Price </label>
+                            <input type="number" class="form-control" id="price">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="priceBtn"
+                            onclick="updateOperation('price')">Update</button>
+                    </form>
+
+                    <form class="updateDisplay" id="updateProductCategory">
+                        <div class="mb-3">
+                            <label for="category" class="form-label"> Category </label>
+                            <input type="text" class="form-control" id="category">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="categoryBtn"
+                            onclick="updateOperation('category')">Update</button>
+                    </form>
+
+                    <form class="updateDisplay" id="updateProductDescription">
+                        <div class="mb-3">
+                            <label for="description" class="form-label"> Description </label>
+                            <input type="text" class="form-control" id="description">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="descriptionBtn"
+                            onclick="updateOperation('description')">Update</button>
+                    </form>
+
+                    <form class="updateDisplay" id="updateProductInStock">
+                        <div class="mb-3">
+                            <label for="inStock" class="form-label"> No Instock </label>
+                            <input type="text" class="form-control" id="inStock">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="inStockBtn"
+                            onclick="updateOperation('inStock')">Update</button>
+                    </form>
+
+                    <form class="updateDisplay" id="updateProductColor">
+                        <div class="mb-3">
+                            <label for="availableColor1" class="form-label"> availableColor1 </label>
+                            <input type="text" class="form-control" id="availableColor1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="availableColor2" class="form-label"> availableColor2 </label>
+                            <input type="text" class="form-control" id="availableColor2">
+                        </div>
+                        <div class="mb-3">
+                            <label for="availableColor3" class="form-label"> availableColor3 </label>
+                            <input type="text" class="form-control" id="availableColor3">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="availableColorBtn"
+                            onclick="updateOperationColor('availableColor1', 'availableColor2', 'availableColor3')">Update</button>
+                    </form>
+
+                    <form class="updateDisplay" id="updateProductSize">
+                        <div class="mb-3">
+                            <label for="availableSize1" class="form-label"> availableSize1 </label>
+                            <input type="text" class="form-control" id="availableSize1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="availableSize2" class="form-label"> availableSize2 </label>
+                            <input type="text" class="form-control" id="availableSize2">
+                        </div>
+                        <div class="mb-3">
+                            <label for="availableSize3" class="form-label"> availableSize3 </label>
+                            <input type="text" class="form-control" id="availableSize3">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="availableSizeBtn"
+                            onclick="updateOperationSize('availableSize1', 'availableSize2', 'availableSize3')">Update</button>
+                    </form>
+
+                    <form class="updateDisplay" id="updateProductImage">
+                        <h4> Upload Image For The Product</h4>
+                        <div class="mb-3">
+                            <label for="productPic" class="form-label"> Product Image </label>
+                            <input type="file" class="form-control" id="productPic">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="updateProductImg"
+                            onclick="updateOperation('productPic')">Update</button>
+                    </form>
+                </div>
+
+
+
+            </main>
+        </div>
+    </div>
+
+
+
+    <!-- my js -->
+    <script src="client_scripts/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+        integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+        integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<%- include('./partials/headers'); -%>
+
+    <div class="cartDiv">
+        <div class="container">
+            <h4> CART </h4>
+
+
+
+            <div class="row cartItemsDiv">
+                <div class="col-lg-12 col-md-12">
+                    <div id="cartDiv">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="summaryDiv" id="summaryDivId">
+
+
+                    </div>
+
+                </div> <br> <br>
+
+            </div>
+
+
+
+
+        </div>
+    </div> <br> <br>
+
+    <div class="paypalPosition">
+        <div id="paypal-button-container" class="paypalHidden"></div>
+    </div>
+
+
+
+    <!-- my js -->
+    <script src="client_scripts/index.js"></script>
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=<%= clientId %>&currency=USD"></script>
+    <script src="client_scripts/paypal.js"></script>
+
+    <%- include('./partials/footers'); -%>

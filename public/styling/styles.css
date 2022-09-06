@@ -1,0 +1,640 @@
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #0579a4;
+}
+
+.navFlut {
+    margin-right: 25px;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #0579a4;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: auto;
+}
+
+.navDiv {
+    padding: 0 5rem;
+}
+
+.navbar {
+    background-color: aliceblue;
+}
+
+.nav-link:link {
+    color: black;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-link:hover {
+    color: blue;
+    font-weight: bold;
+}
+
+.fa-cart-flatbed {
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.cart-value {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+.logo {
+    color: #0579a4;
+}
+
+.banner-text {
+    margin-top: 100px;
+}
+
+.banner-text a {
+    text-decoration: none;
+    background-color: #07b5f5;
+    border: #07b5f5 solid 3px;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+.banner-text h1 {
+    color: #0579a4;
+}
+
+.banner-text p {
+    color: grey;
+    margin-bottom: 2rem;
+}
+
+.banner-text a:hover {
+    background: none;
+    border: #07b5f5 solid 3px;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    transition: 0.7s;
+    color: #0579a4;
+}
+
+.img1 {
+    margin: auto;
+}
+
+.bannerBackground {
+    background-color: aliceblue;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.bannerDiv {
+    padding: 5rem;
+}
+
+.productList {
+    list-style-type: disc;
+    padding: 0;
+    margin: 0;
+}
+
+.productList li {
+    display: inline;
+    margin: 0rem 0.5rem 0rem 0rem;
+    color: grey;
+    font-size: smaller;
+}
+
+.fa-circle {
+    font-size: 2rem;
+}
+
+.product {
+    width: 250px;
+    height: 250px;
+}
+
+.product-img-div {
+    background-color: aliceblue;
+    height: 70%;
+}
+
+.product-img-div:hover {
+    background-color: grey;
+    transition: 0.95s;
+}
+
+.product-img-div p {
+    text-align: center;
+}
+
+.prod-details p {
+    font-weight: bold;
+    margin-bottom: 0;
+    color: grey;
+}
+
+.price {
+    font-weight: bold;
+    margin: 0.5rem 0rem;
+    color: grey;
+}
+
+.fa-cart-plus {
+    font-size: 1rem;
+}
+
+.myBtn {
+    border: #07b5f5 2px solid;
+    border-radius: 5px;
+    padding: 0.4rem;
+    background: none;
+}
+
+.myBtn:hover {
+    background-color: lightgrey;
+    transition: 0.95s;
+    border: lightgrey 2px solid;
+}
+
+.productBtn {
+    background: none;
+    border: none;
+}
+
+.myCol {
+    flex: 1;
+    margin-bottom: 50px;
+}
+
+.shirt-category {
+    padding: 0 1rem;
+}
+
+.show-more p {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.show-more p a {
+    color: black;
+}
+
+.show-more p a:link {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.show-more p a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.show-more {
+    width: 100%;
+    background-color: #0579a4;
+}
+
+.shirt-header {
+    margin: 2rem 0;
+}
+
+.trnding {
+    width: 350px;
+}
+
+.trendingDiv p {
+    text-align: center;
+}
+
+.trendingDiv {
+    background-color: aliceblue;
+    padding: 3rem 0;
+}
+
+.trendingDiv a:hover {
+    opacity: 50%;
+}
+
+
+.trending-g-Div {
+    padding: 2rem 1rem;
+}
+
+.footer-content h4 {
+    text-align: center;
+}
+
+.footer-content ul {
+    text-align: center;
+    list-style: none;
+    padding-left: 0%;
+}
+
+.footer-content ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.socials {
+    color: #07b5f5;
+    font-size: 3rem;
+}
+
+.last1 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+.footer-g-div {
+    padding: 3rem;
+}
+
+
+
+
+
+
+.last {
+    height: 100px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* .banner-text {
+        margin-top: 250px;
+    } */
+
+    .bannerDiv {
+        padding: 1rem;
+    }
+
+    .d-flex {
+        margin-bottom: 1.5rem;
+    }
+
+    .banner-text h1 {
+        color: #0579a4;
+        text-align: center;
+    }
+
+    .banner-text p {
+        color: grey;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .shopNowLink {
+        text-align: center;
+    }
+}
+
+
+
+.linkNav {
+    margin-bottom: o;
+    padding-left: 0;
+    list-style: none;
+}
+
+.linkNav li {
+    display: inline;
+    padding: 0 1rem;
+}
+
+
+.linkNav a {
+    text-decoration: none;
+    color: black;
+}
+
+.circle1 {
+    color: #0579a4;
+}
+
+.circle2 {
+    color: red;
+}
+
+.circle1 {
+    color: green;
+}
+
+
+
+.create-act {
+    margin-top: 10rem;
+
+}
+
+.buyerForm {
+    padding: 2rem;
+    background-color: white;
+    box-shadow: inset;
+}
+
+.create-act {
+    padding: 0 1.5rem;
+}
+
+.createAct h4 {
+    text-align: center;
+}
+
+.createAct p {
+    text-align: center;
+}
+
+.createAct .sellerbutton {
+    border: #07b5f5 2px solid;
+    border-radius: 1.5rem;
+    background: white;
+    margin: 2rem 0;
+    text-align: center;
+    padding: 0.8rem 1.2rem;
+}
+
+.createAct .buyerbutton {
+    border: #07b5f5 2px solid;
+    border-radius: 1.5rem;
+    background: white;
+    margin: 2rem 0;
+    text-align: center;
+    padding: 0.8rem 1.2rem;
+}
+
+.createAct .sellerbutton:hover {
+    background-color: #07b5f5;
+    color: black;
+    transition: 1s;
+}
+
+.createAct .buyerbutton:hover {
+    background-color: #07b5f5;
+    color: black;
+    transition: 1s;
+}
+
+
+.sellerActBtn {
+
+    border: #07b5f5 2px solid;
+    border-radius: 1.5rem;
+    background: none;
+    padding: 0.7rem;
+
+}
+
+.createAct .sellerActBtn:hover {
+    background-color: #07b5f5;
+    color: black;
+    transition: 1s;
+}
+
+.signUpSellerForm {
+    display: none;
+}
+
+#errorMsgId {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.7rem;
+    transition: 1s;
+}
+
+.errorMsg {
+    display: none;
+}
+
+.logInAs {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cartDiv {
+    margin-top: 7.5rem;
+}
+
+/* .productImgStyles {
+    background-color: aliceblue;
+    height: 100%;
+} */
+
+.quantityStyle {
+    font-size: 20px;
+    color: #0579a4;
+    font-weight: bold;
+}
+
+.quantityStyleInc {
+    font-size: 25px;
+    color: #07b5f5;
+}
+
+.incBtn {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.sizeList {
+    font-size: 1.5rem;
+    border: #0579a4 2px solid;
+}
+
+.hiddenInput {
+    display: none;
+}
+
+.chooseGdiv {
+    display: inline-flex;
+}
+
+.choose {
+    margin: 0 0.8rem;
+}
+
+.choose1 {
+    margin: 0 0.8rem 0 0;
+}
+
+.chooseLabel {
+    background-color: blue;
+    padding: 0.2rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.check-out-btn {
+    border: white 2px solid;
+    border-radius: 0.5rem;
+    background-color: white;
+    padding: 0.3rem;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+}
+
+.summaryDiv {
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1% 20% 0% 20%;
+}
+
+.paypalHidden {
+   display: none;
+}
+
+.paypalPosition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-out-btn:hover {
+    background-color: #0579a4;
+    border: #0579a4 2px solid;
+}
+
+.eBg {
+    margin: 0 0.3rem 1rem 0.3rem;
+    padding: 2rem 0.5rem;
+    border: grey solid 2px;
+    border-radius: 10px;
+}
+
+
+
+
+.sizeAndColor {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+}
+
+.sizeAndColor h6 {
+    font-weight: bold;
+}
+
+.sizeAndColor p {
+    color: grey;
+}
+
+.sizeAndColor2 {
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+}
+
+.desc {
+    color: grey;
+}
+
+.fa-cart-flatbed {
+    color: #0579a4;
+}
+
+.cart-value {
+    color: #0579a4;
+    font-weight: bold;
+}
+
+.noProd {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+}
+
+.hideClientId {
+    display: none;
+}
+
+.myform {
+    display: none;
+}
+
+.prodList {
+    padding: 0;
+}
+
+
+.prodList li {
+    display: inline;
+    margin-right: 5px;
+    border: 2px solid #0579a4;
+    padding: 5px;
+    cursor: default;
+}
+
+.clicked {
+    background-color: #0579a4;
+}
+
+.subTotalClass {
+    text-align: center;
+}
+
+.noCartItem {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 990px) {
+    .banner-text {
+        margin-top: 100px;
+    }
+
+    .summaryDiv {
+        position: relative;
+    }
+
+    .eBg {
+        margin-bottom: 50px;
+    }
+
+    .logoFooter {
+        text-align: center;
+    }
+
+    .bannerDiv {
+        padding: 1.5rem;
+    }
+
+    .banner-text h1 {
+        text-align: center;
+    }
+
+    .banner-text p {
+        text-align: center;
+    }
+
+    .shopNowLink {
+        text-align: center;
+    }
+}
