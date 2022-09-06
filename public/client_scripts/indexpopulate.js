@@ -7,7 +7,7 @@ fetch('/products/api/shirts')
         shirtCategoryHandler.innerHTML += `
         <div class="col-lg-3 col-md-3 col-sm-6 col-6 myCol">
                         <div class="product-img-div">
-                            <p> <button class="productBtn" onClick="productDetails('${datun._id}')"> <img src="http://localhost:3000/product/${datun._id}/productpic" alt="product"
+                            <p> <button class="productBtn" onClick="productDetails('${datun._id}')"> <img src="/product/${datun._id}/productpic" alt="product"
                                         class="img-fluid product"> </button> </p>
                         </div>
                         <div class="prod-details">
@@ -42,7 +42,7 @@ fetch('/products/api/footwears')
         shoesCategoryHandler.innerHTML += `
         <div class="col-lg-3 col-md-3 col-sm-6 col-6 myCol">
                         <div class="product-img-div">
-                            <p> <button class="productBtn" onClick="productDetails('${datun._id}')"> <img src="http://localhost:3000/product/${datun._id}/productpic" alt="product"
+                            <p> <button class="productBtn" onClick="productDetails('${datun._id}')"> <img src="/product/${datun._id}/productpic" alt="product"
                                         class="img-fluid product"> </button> </p>
                         </div>
                         <div class="prod-details">
@@ -76,7 +76,7 @@ fetch('/products/api/bags')
         bagCategoryHandler.innerHTML += `
         <div class="col-lg-3 col-md-3 col-sm-6 col-6 myCol">
                         <div class="product-img-div">
-                            <p> <button class="productBtn" onClick="productDetails('${datun._id}')"> <img src="http://localhost:3000/product/${datun._id}/productpic" alt="product"
+                            <p> <button class="productBtn" onClick="productDetails('${datun._id}')"> <img src="/product/${datun._id}/productpic" alt="product"
                                         class="img-fluid product"> </button> </p>
                         </div>
                         <div class="prod-details">
@@ -110,7 +110,7 @@ fetch('/products/api/bags')
         trouserCategoryHandler.innerHTML += `
           <div class="col-lg-3 col-md-3 col-sm-6 col-6 myCol">
                           <div class="product-img-div" onClick="productDetails('${datun._id}')">
-                              <p> <button class="productBtn"> <img src="http://localhost:3000/product/${datun._id}/productpic" alt="product"
+                              <p> <button class="productBtn"> <img src="/product/${datun._id}/productpic" alt="product"
                                           class="img-fluid product"> </button> </p>
                           </div>
                           <div class="prod-details">
@@ -145,7 +145,7 @@ fetch('/products/api/bags')
         capCategoryHandler.innerHTML += `
           <div class="col-lg-3 col-md-3 col-sm-6 col-6 myCol">
                           <div class="product-img-div">
-                              <p> <button class="productBtn" onClick="productDetails('${datun._id}')"> <img src="http://localhost:3000/product/${datun._id}/productpic" alt="product"
+                              <p> <button class="productBtn" onClick="productDetails('${datun._id}')"> <img src="/product/${datun._id}/productpic" alt="product"
                                           class="img-fluid product"> </button> </p>
                           </div>
                           <div class="prod-details">
