@@ -490,6 +490,20 @@ body {
     font-weight: bold;
 }
 
+.check-out-btn-productInfo {
+    border: #0579a4 2px solid;
+    border-radius: 0.5rem;
+    background-color: #0579a4;
+    padding: 0.3rem;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+}
+
+.check-out-btn-productInfo:hover {
+    opacity: 7;
+}
+
 .summaryDiv {
     background-color: aliceblue;
     border-radius: 10px;
