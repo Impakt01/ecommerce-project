@@ -661,7 +661,7 @@ if (productInfoHandler) {
                 <li id="5" onclick="clickedSize('${sizes[1]}', '${data._id}')"> ${sizes[1]} </li>
                 <li id="6" onclick="clickedSize('${sizes[2]}', '${data._id}')"> ${sizes[2]} </li>
             </ul>
-            <button class=".check-out-btn-productInfo" type="button" onClick="addToCart('${data._id}', '${data.inStock}')">ADD TO CART</button>
+            <button class="check-out-btn-productInfo" type="button" onClick="addToCart('${data._id}', '${data.inStock}')">ADD TO CART</button>
         </div>
             `
         })
