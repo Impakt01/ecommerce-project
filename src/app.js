@@ -21,6 +21,7 @@ app.use(express.static('public'))
 
 const port = process.env.PORT
 
+mongoose.set('strictQuery', true)
 mongoose.connect(process.env.MONGODB_CONNECT, {
     useNewUrlParser: true,
 })
