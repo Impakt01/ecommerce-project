@@ -1113,10 +1113,11 @@ const checkoutBtnFlutterwave = (val) => {
             }
 
             const option = {
+                id: data._id,
                 email: data.email,
                 phoneNumber: data.phoneNumber,
                 name: data.name,
-                price: val
+                amount: val
             }
 
             postData('/checkout', option)
